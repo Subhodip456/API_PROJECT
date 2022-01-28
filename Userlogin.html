@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>USER LOGIN</title>
+    </head>
+     <style>
+            .center{
+                text-align:center;
+         }
+         .first{
+             color:black;
+             font-size:35px;
+         }
+         .second{
+             color:black;
+             font-size:35px;
+         }
+         .third{
+             border-color: aqua;
+         }
+         .fourth{
+             color:blue;
+             font-size:25px;
+         }
+         .fifth{
+             color:blue;
+             font-size:25px;
+         }
+         .sixth{
+             border-color: aqua;
+         }
+    </style>
+    <body>
+        <form class="center">
+            <p class="first">ENTER USERNAME</p><br>
+            <input class="sixth" type="text"Id="username"><br>
+            <p class="second">ENTER PASSWORD</p><br>
+            <input class="third"type="password"Id="password"><br> 
+            <br><input class="fourth" type="submit" onlick="validate()" value="Login"><br>
+            <br><input class="fifth" type="reset" value="Reset"><br>
+        </form>
+        <script>
+            function validate()
+            {
+                var username=document.getElementsById("username").value;
+                var password=document.getElementsById("password").value;
+                if(username=="admin" && password=="123@")
+                    {
+                        
+                    
+                    }
+                else{
+                    alert("Login Failed");
+                }
+            }
+        </script>
+    </body>
+</html>
